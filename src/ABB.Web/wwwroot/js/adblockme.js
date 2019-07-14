@@ -1,0 +1,1 @@
+﻿$(".adBlockTest").html("You can not block Me");

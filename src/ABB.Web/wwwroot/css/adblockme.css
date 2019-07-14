@@ -1,0 +1,18 @@
+﻿.adBlockTest, .adBlockTest2 {
+    border: 1px solid black;
+    min-height: 100px;
+    font-size: 22px;
+    margin: 10px;
+    line-height: 100px;
+    text-align: center;
+}
+
+    .adBlockTest:hover, .adBlockTest2:hover {
+        background-color: #7a0b15;
+        color: white;
+    }
+
+#myTestId {
+    width: 33.3333%;
+    margin-left: 33.3333%;
+}

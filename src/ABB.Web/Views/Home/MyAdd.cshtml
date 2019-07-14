@@ -1,0 +1,31 @@
+﻿@{
+    Layout = null;
+    var rnd = new Random();
+    var randomValue = rnd.Next();//add random parameter to your css and js which you want to bypass so that browser don't cache them
+}
+<!--link your css,js file from new provider-->
+<link href="/adblockme.css?v=@randomValue" rel="stylesheet" />
+<link href="/myadd.css?v=@randomValue" rel="stylesheet" />
+<div class="google-adds col-md-12" style="margin-bottom:10px">
+    <!--this is blockable. AdBlockers can block whole div with google-add class-->
+    <div class="adBlockTest2">
+        You can block me by blocking class named google-adds on me.
+    </div>
+</div>
+<div class="myTestClass2" data-test="asd-adds">
+    <div id="myTestId">
+        <div class="myTestClass">
+            <div class="col-md-12" style="margin-bottom:10px">
+                <div class="adBlockTest">
+                    This is default value
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="adBlockTest text-center">
+    This is default value
+</div>
+
+<!--link your css,js file from new provider-->
+<script src="/adblockme.js?v=@randomValue"></script>

@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29009.5
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ABB", "ABB\ABB.csproj", "{2FDD7B6C-F20E-4196-A4AB-225F2EF53E3C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ABB.Web", "ABB.Web\ABB.Web.csproj", "{A19C9627-2FF7-4911-B56E-F71F32189222}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2FDD7B6C-F20E-4196-A4AB-225F2EF53E3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FDD7B6C-F20E-4196-A4AB-225F2EF53E3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FDD7B6C-F20E-4196-A4AB-225F2EF53E3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FDD7B6C-F20E-4196-A4AB-225F2EF53E3C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A19C9627-2FF7-4911-B56E-F71F32189222}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A19C9627-2FF7-4911-B56E-F71F32189222}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A19C9627-2FF7-4911-B56E-F71F32189222}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A19C9627-2FF7-4911-B56E-F71F32189222}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {856388E6-4E8D-4285-BC9A-93B0AD847859}
+	EndGlobalSection
+EndGlobal

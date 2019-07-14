@@ -1,0 +1,54 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+    var rnd = new Random();
+    var randomValue = rnd.Next();//add random parameter to your css and js which you want to bypass so that browser don't cache them
+}
+<link href="/adblockme.css?v=@randomValue" rel="stylesheet" />
+<link href="/myadd.css?v=@randomValue" rel="stylesheet" />
+
+<div class="col-md-12">
+    <div class="text-center col-md-12">
+        <p>This is an adblock bypass example. Try to block them and refresh page.</p>
+        <p>
+            Each time you refresh the page, The html element and the css, js files and urls of all the ads are reloaded with another random name. Ads will have another class, another id, and another tag. URLs of ads page items change every 10 sec. With this way, AdBlock can not catch them, your ads markers will be unpredictable random strings.
+        </p>
+    </div>
+    <hr/>
+    <div>These will be loaded with the request when the page opens.</div>
+    <div class="google-adds col-md-12" style="margin-bottom:10px">
+        <!--this is blockable. AdBlockers can block whole div with google-add class-->
+        <div class="adBlockTest2">
+            You can block me by blocking class named google-adds on me.
+        </div>
+    </div>
+    <div class="myTestClass2" data-test="asd-adds">
+        <div id="myTestId">
+            <div class="myTestClass">
+                <div class="col-md-12" style="margin-bottom:10px">
+                    <div class="adBlockTest">
+                        This is default value
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="adBlockTest text-center">
+        This is default value
+    </div>
+    <hr/>
+    <div>These will be loaded with javascript after opening the page.</div>
+
+    <div id="myAddArea">
+
+    </div>
+
+</div>
+
+@section Scripts
+{
+    <!--link your css,js file from new provider-->
+    <script src="/adblockme.js?v=@randomValue"></script>
+    <script>
+        $("#myAddArea").load("@Url.Action("MyAdd","Home")")
+    </script>
+}
