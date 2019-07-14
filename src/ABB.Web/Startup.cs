@@ -35,7 +35,7 @@ namespace ABB.Web
 
             services.AddAdBlockBypass(opt =>
             {
-                opt.CacheExpireTimeSec = 30;
+                opt.CacheExpireTimeSec = 10;
                 opt.DefaultFilePath = Directory.GetCurrentDirectory() + "/wwwroot/";
                 opt.AddCSSFiles(
                     new ABBFile()
