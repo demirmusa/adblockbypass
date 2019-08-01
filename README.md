@@ -67,36 +67,7 @@ Add UseAdBlockBypass to your application builder  (IApplicationBuilder)
 app.UseAdBlockBypass();
 ```
 
-***Step 4***
 
-Add random parameter to your css and js which you want to bypass so that browser don't cache them
-
-`MyAdd.cshtml`
-
-```cshtml
-@{
-    var rnd = new Random();
-    var randomValue = rnd.Next();//add random parameter to your css and js which you want to bypass so that browser don't cache them
-}
-<!--link your css,js file from new provider-->
-<link href="/cssp/adblockme.css?v=@randomValue" rel="stylesheet" />
-<link href="/cssp/myadd.css?v=@randomValue" rel="stylesheet" />
-
-<div class="myTestClass2" data-test="asd-adds">
-    <div id="myTestId">
-        <div class="myTestClass">
-            <div class="col-md-12" style="margin-bottom:10px">
-                <div class="adBlockTest">
-                    This is default value
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!--link your css,js file from new provider-->
-<script src="/jsp/adblockme.js?v=@randomValue"></script>
-```
 After all, the uri of your css/js files and all the key values that you enter will be refreshed each time the cache time expires.
 With this way your ads markers will be unpredictable. And you will able to bypass adblocks
 
